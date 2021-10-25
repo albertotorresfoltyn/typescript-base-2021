@@ -1,0 +1,35 @@
+{
+  "name": "ts-bare",
+  "version": "1.0.0",
+  "description": "A barebone project for typescript backends (mainly monoliths)",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "watch": "tsc-watch --onSuccess \"node ./dist/demo.js\"",
+    "test": "jest",
+    "release": "standard-version",
+    "prepare": "husky install"
+  },
+  "author": "Alberto Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "standard-version": "^9.3.2",
+    "ts-jest": "^27.0.7",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.4.4"
+  }
+}
